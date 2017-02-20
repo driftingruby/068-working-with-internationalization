@@ -1,5 +1,5 @@
 ---
-en:
+ja:
   activerecord:
     attributes:
       user:
@@ -7,14 +7,14 @@ en:
         first_name: First@Name
         last_name: Last@Name
     model:
-      user: Users
+      user: Users!
   back: Back
   date:
     formats:
-      default: "%m/%d/%Y"
-      short: "%m/%d"
+      default: "%Y/%m/%d"
+      short: "%d/%m"
   edit: Edit
-  greetings: Hello guest!
+  greetings: こんにちはゲスト！
   visitors:
     index:
       greetings: Hello guest!

@@ -1,0 +1,17 @@
+<p>
+  <strong><%= User.human_attribute_name(:first_name) %></strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:last_name) %></strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong><%= User.human_attribute_name(:email) %></strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to t(:edit), edit_user_path(@user) %> |
+<%= link_to t(:back), users_path %>

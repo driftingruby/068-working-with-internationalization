@@ -1,2 +1,4 @@
-<h1>Visitors#index</h1>
-<p>Find me in app/views/visitors/index.html.erb</p>
+<h1><%= t :greetings %></h1>
+<h1><%= t '.greetings' %></h1>
+<h4>Default: <%= l Date.today %></h4>
+<h4>Short: <%= l Date.today, format: :short %></h4>

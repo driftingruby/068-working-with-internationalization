@@ -1,1 +1,11 @@
-<%# add navigation links to this file %>
+<%= content_tag :li do %>
+  <%= link_to User.model_name.human, users_path %>
+<% end %>
+
+<%= content_tag :li do %>
+  <%= link_to 'Switch to English', locale: :en %>
+<% end unless current_page?(locale: :en) %>
+
+<%= content_tag :li do %>
+  <%= link_to 'Switch to Japanese', locale: :ja %>
+<% end unless current_page?(locale: :ja) %>
